@@ -1,0 +1,21 @@
+.hero {
+	height: 200vh;
+
+	&__btn {
+		display: block;
+		margin: 300px auto 0 auto;
+		font-size: $font-size-title;
+		padding: $offset-small $offset-base;
+		border-radius: $offset-small;
+		background-color: $color-accent;
+		color: $color-bg;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: lighten($color-accent, 5);
+			}
+		}
+	}
+}

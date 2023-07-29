@@ -1,0 +1,75 @@
+.descr {
+	max-width: 760px;
+	grid-column: 1 / 2;
+	margin-bottom: 32px;
+
+	&__inner {
+		display: flex;
+		gap: $offset-large;
+	}
+
+	&__logo {
+		flex-shrink: 0;
+	}
+
+	&__content {
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__btn-mobile {
+		display: none;
+	}
+
+	&__title {
+		margin-bottom: $offset-large;
+
+		font-weight: 600;
+		font-size: clamp-px(29, 34, 970);
+		font-feature-settings: "clig" off, "liga" off;
+
+		position: relative;
+		&::before {
+			content: "";
+			display: inline-block;
+			vertical-align: sub;
+			width: 32px;
+			height: 32px;
+			margin-right: $offset-small;
+			background-image: url(../icons/common/verif.svg);
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		margin-bottom: $offset-small;
+		color: $color-accent;
+		font-size: $font-size-text;
+		transition: color 0.3s ease-in-out;
+		position: relative;
+		&::before {
+			content: "";
+			display: inline-block;
+			vertical-align: text-top;
+			width: 20px;
+			height: 20px;
+			margin-right: $offset-small;
+			background-image: url(../icons/social/vk.svg);
+			background-repeat: no-repeat;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: darken($color-accent, 10);
+			}
+		}
+	}
+
+	&__text {
+		font-size: $font-size-text;
+		color: $color-text;
+	}
+}

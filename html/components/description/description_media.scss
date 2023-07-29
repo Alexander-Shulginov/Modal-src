@@ -1,0 +1,29 @@
+@media (max-width: 1230px) {
+	.descr {
+		margin-right: $offset-base;
+		&__logo {
+			flex-shrink: 0.5;
+		}
+	}
+}
+
+@media (max-width: 970px) {
+	.descr {
+		max-width: unset;
+		&__text {
+			max-width: 760px;
+		}
+
+		&__btn-mobile {
+			display: block;
+		}
+	}
+}
+
+@media (max-width: 630px) {
+	.descr {
+		&__logo {
+			display: none;
+		}
+	}
+}

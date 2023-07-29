@@ -1,0 +1,16 @@
+@media (max-width: 1230px) {
+	.info {
+		margin-right: $offset-base;
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+	}
+}
+
+@media (max-width: 970px) {
+	.info {
+		max-width: unset;
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: $offset-large;
+	}
+}

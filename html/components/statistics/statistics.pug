@@ -1,0 +1,54 @@
+section.stat 
+    .stat__inner
+        .stat__btn-mobile
+            include ../close-btn/close-btn.pug
+        h2.stat__title Статистика площадки
+    .stat__content
+        ul.stat__list 
+            li.stat__item 
+                span.stat__name Подписчики
+                .stat__amount 
+                    +svg("statistics--sub", "stat__icon", 32, 32)
+                    span.stat__value 1 000 000
+            li.stat__item 
+                .stat__info
+                    span.stat__name ER охват
+                    .stat__quest 
+                        .stat__tips 
+                            span.stat__tips-title Tips
+                        +svg("common--quest", "stat__quest-icon", 16, 16)
+                .stat__amount 
+                    +svg("statistics--line", "stat__icon", 32, 32)
+                    span.stat__value 35.8%
+            li.stat__item 
+                .stat__info
+                    span.stat__name ER реакции
+                    .stat__quest 
+                        .stat__tips 
+                            span.stat__tips-title Tips
+                        +svg("common--quest", "stat__quest-icon", 16, 16)
+                .stat__amount 
+                    +svg("statistics--click", "stat__icon", 32, 32)
+                    span.stat__value 35.8%
+            li.stat__item 
+                .stat__info
+                    span.stat__name Охват поста
+                    .stat__quest 
+                        .stat__tips 
+                            span.stat__tips-title Tips
+                        +svg("common--quest", "stat__quest-icon", 16, 16)
+                .stat__amount 
+                    +svg("statistics--watch", "stat__icon", 32, 32)
+                    span.stat__value 1 000 000
+            li.stat__item 
+                .stat__info
+                    span.stat__name CTR
+                    .stat__quest 
+                        .stat__tips 
+                            span.stat__tips-title Tips
+                        +svg("common--quest", "stat__quest-icon", 16, 16)
+                .stat__amount 
+                    +svg("statistics--arrow", "stat__icon", 32, 32)
+                    span.stat__value 35.8%
+        .stat__btn
+            include ../close-btn/close-btn.pug

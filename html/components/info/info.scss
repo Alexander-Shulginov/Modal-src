@@ -1,0 +1,90 @@
+.info {
+	max-width: 760px;
+	margin-bottom: 32px;
+
+	&__title {
+		margin-bottom: $offset-base;
+		font-size: $font-size-title;
+		color: $color-text;
+		font-weight: 600;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: $offset-small;
+	}
+
+	&__item {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__key {
+		font-size: $font-size-text;
+		color: $color-text-info;
+		white-space: nowrap;
+		padding-right: 5px;
+	}
+
+	&__dots {
+		flex-grow: 2;
+		background-image: linear-gradient(
+			to right,
+			$color-text-info 35%,
+			transparent 10%
+		);
+		color: transparent;
+		background-size: 10px 1px;
+		background-repeat: repeat-x;
+		background-position-y: 15px;
+	}
+
+	&__value {
+		font-size: $font-size-text;
+		color: $color-text;
+		padding-left: 5px;
+	}
+
+	&__more-value {
+		display: none;
+	}
+
+	&__more-value--isVisible {
+		display: inline;
+	}
+
+	&__btn {
+		background-color: $color-bg;
+		color: $color-accent;
+		font-family: $main-font;
+		cursor: pointer;
+		transition: color 0.3s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: darken($color-accent, 10);
+			}
+		}
+	}
+
+	&__btn--more {
+		padding-left: 3px;
+		margin-left: -8px;
+		z-index: 10;
+	}
+
+	&__btn--more--isVisible {
+		display: none;
+	}
+
+	&__btn--less {
+		display: none;
+	}
+
+	&__btn--less--isVisible {
+		display: inline;
+		margin-left: 4px;
+	}
+}

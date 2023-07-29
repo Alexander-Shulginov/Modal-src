@@ -1,0 +1,29 @@
+section.format 
+    .format__container 
+        .format__head 
+            h2.format__title Форматы размещения
+            .format__quest 
+                .format__tips 
+                    span.format__tips-title Tips
+                +svg("common--quest", "format__quest-icon", 24, 24)
+        table.format__table 
+            thead.format__table-head 
+                tr.format__table-head-row
+                    th.format__table-head-item Формат
+                    th.format__table-head-item Без закрепления 
+                    th.format__table-head-item С закреплением
+            tbody.format__table-body
+                tr.format__table-body-row
+                    td.format__table-item 1/24
+                    td.format__table-item--bold.format__table--center 500 ₽
+                    td.format__table-item--bold 50 000 ₽
+                tr.format__table-body-row
+                    td.format__table-item 1/48
+                    td.format__table-item--bold.format__table--center 5 000 ₽
+                    td.format__table-item--bold 550 000 ₽
+                tr.format__table-body-row
+                    td.format__table-item 1/72
+                    td.format__table-item--bold.format__table--center 50 000 ₽
+                    td.format__table-item--bold 1 000 000 ₽
+        button.format__btn(type="button") Добавить площадку в корзину
+        p.format__text Выбрать формат и настроить параметры размещения вы сможете в Корзине

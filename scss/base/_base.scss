@@ -1,0 +1,33 @@
+body {
+	scroll-behavior: smooth;
+	font-family: $main-font, sans-serif;
+	line-height: $line-height-base;
+	position: relative;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+	outline-offset: 2px;
+	outline-color: $color-accent;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.overlay {
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 40;
+	}
+}

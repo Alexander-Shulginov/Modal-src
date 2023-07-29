@@ -1,0 +1,27 @@
+- 
+    var data = {
+        "Тематика площадки": "Бизнес, Доска объявлений, Дизайн и интерьер, Строительство, ",
+        "Языки": "Русский",
+        "Страны": "Россия, Украина, Беларусь",
+        "Возраст аудитории": "18-52",
+        "Соотношение полов (М/Ж), %": "40/60",
+        "Авторская площадка": "Да",
+    } 
+
+section.info 
+    h2.info__title Информация о площадке
+    ul.info__content 
+        each value, key in data
+            if key === "Тематика площадки"
+                li.info__item 
+                    span.info__key= key
+                    span.info__dots .
+                    span.info__value= value  
+                        button.info__btn.info__btn--more(type="button") еще 3
+                        span.info__more-value Услуги, Анализ, Советы
+                        button.info__btn.info__btn--less(type="button") скрыть
+            else 
+                li.info__item 
+                    span.info__key= key
+                    span.info__dots .
+                    span.info__value= value
